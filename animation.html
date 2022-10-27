@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		body{
+			background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b9/Soccer_field_-_empty.svg");
+			margin: 0px;
+			background-repeat: no-repeat;
+			background-size: cover;
+
+		}
+		
+
+		#ball{
+			width: 50px;
+			height: 50px;
+			top: 430px;
+			left: 50%;
+			background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Soccerball.svg/800px-Soccerball.svg.png);
+			background-size: cover;
+			animation-name: roll;
+			animation-duration: 4s;
+			animation-iteration-count: 1;
+			position: relative;
+
+			z-index: 3;
+		}
+
+		@keyframes roll{
+			0%{
+
+				right: 30px;
+			}
+			100%{
+				left: 30px;
+			}
+
+		}
+	</style>
+</head>
+<body>
+<div id="ball"></div>
+	
+
+</body>
+</html>
