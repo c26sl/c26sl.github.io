@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Soccer Ball</title>
+
+<style type="text/css">
+	
+
+
+	#ball{
+	height: 100px;
+	width: 100px;
+	background-image: url(https://cdn11.bigcommerce.com/s-5ig7x53cx8/images/stencil/1280x1280/products/2805/18641/ME-4024-Sports-Ball-Soccer-2__10658.1641408341.png?c=2);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+
+
+}
+
+	#field{
+		height: 700px;
+		width: 100%;
+		margin-right: 0px;
+		margin-left: 0px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		background-image: url(https://t3.ftcdn.net/jpg/04/37/31/82/360_F_437318200_I1qRgsZrfmNTCqfrAHPK9mWm40WuxLP6.jpg);
+		background-repeat: no-repeat;
+		background-size: contain;
+
+
+	}
+
+</style>
+</head>
+<body>
+
+<div id="ball"></div>
+<div id="field"></div>
+
+
+<script type="text/javascript">
+
+document.addEventListener("click",function makeDiv(event){
+console.log(event.clientX, event.clientY);
+ball.style.left = event.clientX - 50 + "px";
+ball.style.top = event.clientY - 50 + "px";
+
+})
+
+
+
+</script>
+</body>
+</html>
