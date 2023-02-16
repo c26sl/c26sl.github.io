@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+		#pic{
+			width:100%;
+			height:800px;
+			background-color:grey;
+			background-image:url(./penguins/1.png);
+			background-size:contain;
+			background-repeat:no-repeat;
+			background-position:center;
+			transition:1.8s;
+
+
+		}
+	</style>
+</head>
+<body>
+
+	<center>
+		<div id="pic"></div>
+	</center>
+
+	<script type="text/javascript">
+		var counter = 1;
+
+	function changeImage (){
+			counter=counter+1
+			console.log(counter)
+			pic.style.backgroundImage = "url(./penguins/"+counter +".png)";
+
+			if (counter >= 6) {
+				counter =0;
+			}
+		} 
+
+		setInterval(changeImage, 2000)
+	</script>
+
+</body>
+</html>

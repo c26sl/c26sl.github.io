@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+	div{
+		width:400px;
+		height:400px;
+		border:1px solid darkred;
+}
+</style>
+</head>
+</head>
+<body>
+
+
+<div id=box1></div>
+<div id=box2></div>
+
+
+<script type="text/javascript">
+
+	var goats = ["goat of soccer", "goat of football", "goat of baseball", "goat of basketball", "goat of tennis", "goat of swimming", "goat of computer science"]
+	var people = ["Lionel Messi", "Tom Brady", "Derek Jeter", "Micheal Jordan","Rodger Federer", "Micheal Phelps", "Molly Josephs"]
+
+
+	function wait (){
+		box2.innerText = people[number]
+	}
+
+var number;
+
+	document.addEventListener("click", function(){
+		number = Math.round(Math.random()*2);
+
+		box1.innerText = goats[number]
+
+		setTimeout(wait, 2000)
+	})
+</script>
+</body>
+</html>

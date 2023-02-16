@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+	.bacon {
+	width:100px;
+	height: 100px;
+	display: inline-block;
+	margin: 3px;
+	background-image: url(https://static.wikia.nocookie.net/icarus/images/a/a7/ITEM_Raw_Bacon.png/revision/latest?cb=20220401134535);
+	background-size: contain;
+	background-repeat: no-repeat;
+	}		
+
+	</style>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	function makeBacon (x){
+var bacon = document.createElement("div"); 
+document.body.appendChild(bacon)	
+bacon.classList.add("breakfast");		``
+bacon.innerText = x;
+
+bacon.addEventListener("click", function(){
+bacon.style.backgroundImage="url (https://www.nueskes.com/assets/1/20/DimLarge/743_nueskes_thick_cut_bacon.jpg?2726)"
+
+})
+
+}
+
+for (var i=0;i<1001;i=i+1)
+{makeBacon(i)}
+</script>
+
+
+</body>
+</html>
