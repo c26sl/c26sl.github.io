@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+
+	<style type="text/css">
+
+		.eagle{
+
+		width: 100px;
+		height:100px;
+		background-image: url(https://static.wixstatic.com/media/9f7092_55897a93d01b449f957b7a3365e5580d~mv2.png/v1/fill/w_402,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Bald-Eagle-Transparent-Images-PNG.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: absolute;
+
+
+	}
+
+	</style>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		function eagles (){
+			var eagle = document.
+				createElement("div");
+				document.body.appendChild(
+					eagle);
+				eagle.classList.add('eagle')
+
+				function randomPosition (){
+					eagle.style.left = Math.random()*1000 + "px";
+					eagle.style.top = Math.random()*1000 + "px";
+				}
+
+				randomPosition()
+
+
+			}
+
+for(var i=0; i<100; i=i+1){
+	eagles()
+}
+
+
+
+	</script>
+
+
+</body>
+</html>
